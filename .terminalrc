@@ -1,0 +1,17 @@
+# Powerline
+. /home/james/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-tomorrow-dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# Binds
+bind '"\t":menu-complete'
+
+# Good things with bad names
+eval "$(thefuck --alias oops)"
+
+# PATH
+export PATH="/usr/local/texlive/2016/bin/x86_64-linux:$PATH"
+export MANPATH="/usr/local/texlive/2016/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/local/texlive/2016/texmf-dist/doc/info:$INFOPATH"
