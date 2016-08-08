@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="reset_terminal" mtime="1470662860" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;r</stringvalue>
+	</entry>
+	<entry name="next_tab" mtime="1470410708" type="string">
+		<stringvalue>&lt;Primary&gt;period</stringvalue>
+	</entry>
+	<entry name="previous_tab" mtime="1470410702" type="string">
+		<stringvalue>&lt;Primary&gt;comma</stringvalue>
+	</entry>
+	<entry name="move_tab_right" mtime="1470409877" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="move_tab_left" mtime="1470409879" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+</gconf>
