@@ -1,0 +1,6 @@
+[user]
+	name = RetroCraft
+	email = retrocraft314@gmail.com
+	signingkey = 5AE9E583
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
