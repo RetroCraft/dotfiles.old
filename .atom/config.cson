@@ -1,0 +1,15 @@
+"*":
+  core:
+    projectHome: "/home/james/Documents/CodingStuff"
+  editor:
+    fontFamily: "Source Code Pro for Powerline"
+    fontSize: 18
+  "exception-reporting":
+    userId: "71b999ad-759f-2e99-fc1a-7bfdba11bb6a"
+  "git-plus": {}
+  minimap:
+    plugins:
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  welcome:
+    showOnStartup: false
