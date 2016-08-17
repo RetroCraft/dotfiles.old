@@ -108,3 +108,6 @@ fi
 if [ -f ~/.terminalrc ]; then
     . ~/.terminalrc
 fi
+
+export NVM_DIR="/home/james/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

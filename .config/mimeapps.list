@@ -5,8 +5,12 @@ x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 x-scheme-handler/mailto=google-chrome.desktop
+image/svg+xml=inkscape.desktop
 
 [Added Associations]
 application/x-trash=gedit.desktop;
-application/x-shellscript=nautilus-autorun-software.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;gvim.desktop;nautilus-autorun-software.desktop;
 application/x-sharedlib=nautilus-autorun-software.desktop;
+image/svg+xml=inkscape.desktop;
+image/png=inkscape.desktop;
+application/octet-stream=org.gnome.gedit.desktop;org.gnome.FileRoller.desktop;

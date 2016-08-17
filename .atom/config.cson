@@ -1,12 +1,32 @@
 "*":
+  _dartlang:
+    _errorsInitialized: true
+    _firstRun: true
+    _version: "0.6.35"
+  _flutterAnalytics:
+    clientId: "ad840cdb-d212-4075-b424-1d4dbd457aa9"
+    optIn: true
+  "autocomplete-plus":
+    autoActivationDelay: 500
   core:
+    disabledPackages: [
+      "emmet"
+    ]
+    followSymlinks: false
     projectHome: "/home/james/Documents/CodingStuff"
+  dartlang:
+    sdkLocation: "/mnt/shared/bin/flutter/bin/cache/dart-sdk"
   editor:
     fontFamily: "Source Code Pro for Powerline"
     fontSize: 18
   "exception-reporting":
     userId: "71b999ad-759f-2e99-fc1a-7bfdba11bb6a"
+  flutter:
+    flutterRoot: "/mnt/shared/bin/flutter"
   "git-plus": {}
+  linter:
+    displayLinterInfo: false
+    showErrorPanel: false
   minimap:
     plugins:
       pigments: true

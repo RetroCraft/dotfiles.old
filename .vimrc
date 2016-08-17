@@ -93,6 +93,7 @@ inoremap kj <Esc>
 call camelcasemotion#CreateMotionMappings('<leader>')   " camelcasemotion
 nnoremap <F10> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 nnoremap <F11> :YcmCompleter FixIt<cr>
+cmap w!! w !sudo tee > /dev/null %
 
 " Window Navigation Things
 

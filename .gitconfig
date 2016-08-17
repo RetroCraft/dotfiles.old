@@ -4,3 +4,5 @@
 	signingkey = 5AE9E583
 [credential]
 	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+[push]
+	default = simple

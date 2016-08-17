@@ -28,12 +28,11 @@ alias refresh='source ~/.bashrc'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+alias fixdisplay='/usr/bin/xrandr --output DVI-I-1 --off && sleep 2 && /usr/bin/xrandr --output DVI-I-1 --left-of eDP1 --auto'
+
 #######################
 # Tools and Long Things
 #######################
-
-## Get current public IP
-alias myip='curl icanhazip.com'
 
 ## Alert boxes
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -42,7 +41,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias psg='ps aux | grep -v grep | grep -i -e VSZ -e'
 
 ## MRU Commands
-function mru {
+mru () {
   echo "Most used commands:"
   history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
 }
@@ -54,7 +53,7 @@ mcd () {
 }
 
 ## Super Extract Yay
-function extract {
+extract () {
   if [ -z "$1" ]; then
     # display usage if no parameters given
     echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"

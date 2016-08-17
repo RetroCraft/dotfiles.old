@@ -2,8 +2,7 @@
 . /home/james/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-tomorrow-dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+. /home/james/.config/base16-shell/scripts/base16-tomorrow-night.sh
 
 # Binds
 bind '"\t":menu-complete'
@@ -12,6 +11,8 @@ bind '"\t":menu-complete'
 eval "$(thefuck --alias oops)"
 
 # PATH
-export PATH="/usr/local/texlive/2016/bin/x86_64-linux:$PATH"
+export PATH="/home/james/bin:/mnt/shared/bin/android/sdk/tools:/mnt/shared/bin/android-studio/bin:/mnt/shared/bin/flutter/bin:/usr/local/texlive/2016/bin/x86_64-linux:$PATH"
 export MANPATH="/usr/local/texlive/2016/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2016/texmf-dist/doc/info:$INFOPATH"
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export ANDROID_HOME="/mnt/shared/bin/android/sdk"

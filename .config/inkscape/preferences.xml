@@ -133,10 +133,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="680.796"
-         height="911.554"
+         width="74.9576"
+         height="501.356"
          rx="0"
-         ry="0" />
+         ry="42.6" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -171,7 +171,8 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         open="0" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -335,7 +336,7 @@
        show_sample_in_list="1"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:-1.64999998px;word-spacing:0px"
        selcue="1"
-       align_mode="1" />
+       align_mode="2" />
     <eventcontext
        id="nodes"
        selcue="1"
@@ -409,7 +410,7 @@
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
        selcue="1"
-       curvature="3"
+       curvature="0"
        length="100" />
     <eventcontext
        id="paintbucket"
@@ -419,9 +420,9 @@
        offset="0"
        offsetunits="pt" />
     <group
-       unit="px"
+       id="measure"
        fontsize="10"
-       id="measure" />
+       unit="px" />
   </group>
   <group
      id="palette">
@@ -562,14 +563,14 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="2"
+       page="0"
        x="0"
        y="0"
-       w="367"
-       h="342"
+       w="343"
+       h="430"
        visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="filtereffects" />
     <group
@@ -590,7 +591,21 @@
        id="transformation"
        applyseparately="0" />
     <group
-       id="align" />
+       id="align"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       sel-as-groups="1"
+       align-to="4"
+       x="0"
+       y="0"
+       w="343"
+       h="430"
+       visible="1"
+       state="2"
+       placement="5" />
     <group
        id="xml" />
     <group
@@ -609,10 +624,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="396"
-       y="117"
-       w="884"
-       h="785"
+       x="160"
+       y="0"
+       w="486"
+       h="668"
        visible="0"
        placement="1" />
     <group
@@ -634,14 +649,14 @@
        panel_border="0"
        x="0"
        y="0"
-       w="367"
-       h="450"
+       w="343"
+       h="430"
        visible="1"
        state="2"
-       placement="2">
+       placement="5">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi" />
     </group>
@@ -650,7 +665,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/james/Pictures/Art/Backgrounds/Bible Verses"
+       path="/mnt/shared/BigStuff/base16-Theme/unity"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -667,8 +682,9 @@
        enable_preview="1"
        path=""
        ask="1"
-       link="link"
-       scale="optimizeSpeed" />
+       link="embed"
+       scale="auto"
+       forcexdpi="0" />
     <group
        id="debug"
        redirect="0" />
@@ -693,7 +709,7 @@
        palette="Base16 Tomorrow"
        x="0"
        y="0"
-       w="365"
+       w="345"
        h="66"
        visible="1"
        state="2"
@@ -714,11 +730,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="365"
-       h="179"
+       w="343"
+       h="430"
        visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="extensioneditor" />
     <group
@@ -739,6 +755,24 @@
        on-focus="1.0"
        on-blur="0.50"
        animate-time="100" />
+    <group
+       placement="1"
+       state="2"
+       visible="0"
+       h="180"
+       w="365"
+       y="0"
+       x="0"
+       panel_border="0"
+       panel_wrap="0"
+       panel_mode="1"
+       panel_size="1"
+       panel_ratio="100"
+       id="objectattr">
+      <group
+         panel_size="0"
+         id="" />
+    </group>
   </group>
   <group
      id="printing">
@@ -1024,15 +1058,16 @@
        id="rendering" />
   </group>
   <group
-     id="extensions" />
+     id="extensions"
+     org.ekips.filter.extractimage.filepath="Genesis 1:1-background" />
   <group
      id="desktop"
-     style="fill:#1d1f21;font-size:90px;-inkscape-font-specification:ScriptC;font-family:ScriptC;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:tb;stroke:#1d1f21;stroke-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;text-anchor:middle;text-align:center;opacity:0.513">
+     style="fill:#e0e0e0;font-size:10px;-inkscape-font-specification:'Roboto Condensed, Bold Italic';font-family:'Roboto Condensed';font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal;writing-mode:tb;stroke:#81a2be;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;text-anchor:end;text-align:end;opacity:0.794">
     <group
-       width="640"
-       height="480"
-       x="0"
-       y="0"
+       width="1257"
+       height="689"
+       x="72"
+       y="39"
        fullscreen="0"
        id="geometry"
        maximized="1" />
