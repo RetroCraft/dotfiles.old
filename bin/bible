@@ -1,0 +1,8 @@
+#!/bin/bash
+verse="Jn3:16"
+[[ ! -z $1 ]] && verse="$1"
+translation="kjv"
+[[ ! -z $2 ]] && translation="$2"
+
+curl -s "https://bible-api.com/$verse?translation=$translation" | \
+sed -r 's/.*"text":" *([^"]*)".*/\1/; s/\\n/\n/g; s/ {2,}/ /g'

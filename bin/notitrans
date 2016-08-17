@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Set default language
+language="fr"
+# If argument supplied, use that language
+[[ ! -z $1 ]] && language="$1"
+# Get text to be translated
+text="$(xsel -o)"
+# If argument supplied translate that instead
+shift
+[[ ! -z $* ]] && text="$*"
+# Translate text with google API
+translate="$(wget -U "Mozilla/5.0" -qO - "http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=$language&dt=t&q=$(echo $text | sed "s/[\"'<>]//g")" | sed "s/,,,0]],,.*//g" | awk -F'\"' '{print $2}')"
+# Copy result to clipboard
+echo "$translate" | xclip -selection clipboard
+# Dismiss existing dialogs
+killall notify-osd
+# Send dialog
+notify-send --icon=info "Translate: ${language^^}" "$translate"
