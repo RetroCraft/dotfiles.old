@@ -34,7 +34,7 @@
           <serial>0x00000000</serial>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>0</rate>
           <x>1680</x>
           <y>0</y>
           <rotation>normal</rotation>

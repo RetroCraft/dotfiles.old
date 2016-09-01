@@ -9,7 +9,7 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
+alias .5='cd ../../../../../'
 
 # Apt
 alias agi='sudo apt-get install'
@@ -23,16 +23,22 @@ alias reboot='sudo /sbin/reboot'
 alias wget='wget -c'
 alias vim='gvim'
 alias vi='vim'
-alias shutup='amixer -q -D pulse set Master toggle'
-alias refresh='source ~/.bashrc'
-
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-alias fixdisplay='/usr/bin/xrandr --output DVI-I-1 --off && sleep 2 && /usr/bin/xrandr --output DVI-I-1 --left-of eDP1 --auto'
+alias chrome='google-chrome'
+alias update-cron='crontab -u james /home/james/.crontab'
+alias refresh='source /home/james/.bashrc'
 
 #######################
 # Tools and Long Things
 #######################
+
+## Disable volume
+alias shutup='amixer -q -D pulse set Master toggle'
+
+## Dotfiles bare git repo at ~/.cfg
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+## Display things
+alias displayfix='/usr/bin/xrandr --output DVI-I-1 --off && sleep 2 && /usr/bin/xrandr --output DVI-I-1 --left-of eDP1 --auto'
 
 ## Alert boxes
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -59,8 +65,8 @@ extract () {
     echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
   else
     if [ -f $1 ] ; then
-      # NAME=${1%.*}
-      # mkdir $NAME && cd $NAME
+      NAME=${1%.*}
+      mkdir $NAME && cd $NAME
       case $1 in
         *.tar.bz2)   tar xvjf ../$1    ;;
         *.tar.gz)    tar xvzf ../$1    ;;

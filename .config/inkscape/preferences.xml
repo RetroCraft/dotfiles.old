@@ -420,9 +420,9 @@
        offset="0"
        offsetunits="pt" />
     <group
-       id="measure"
+       unit="px"
        fontsize="10"
-       unit="px" />
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -656,7 +656,7 @@
        placement="5">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi" />
     </group>
@@ -756,22 +756,22 @@
        on-blur="0.50"
        animate-time="100" />
     <group
-       placement="1"
-       state="2"
-       visible="0"
-       h="180"
-       w="365"
-       y="0"
-       x="0"
-       panel_border="0"
-       panel_wrap="0"
-       panel_mode="1"
-       panel_size="1"
+       id="objectattr"
        panel_ratio="100"
-       id="objectattr">
+       panel_size="1"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="365"
+       h="180"
+       visible="0"
+       state="2"
+       placement="1">
       <group
-         panel_size="0"
-         id="" />
+         id=""
+         panel_size="0" />
     </group>
   </group>
   <group

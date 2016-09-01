@@ -25,11 +25,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/netrw.vim'
-Plugin 'edkolev/promptline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'jeaye/color_coded'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'tpope/vim-obsession'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -75,6 +75,7 @@ colorscheme base16-tomorrow-night " colors!
 set background=dark			" readability!
 let python_highlight_all=1	" syntax highlighting
 set go=m					" hide menus
+set mouse=a
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//

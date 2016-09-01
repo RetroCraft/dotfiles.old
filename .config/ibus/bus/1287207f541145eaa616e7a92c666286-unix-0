@@ -1,3 +1,3 @@
 # This file is created by ibus-daemon, please do not modify it
-IBUS_ADDRESS=unix:abstract=/tmp/dbus-u3vBVYKb,guid=077f5712e2da54e7ea02e19c57b4c88d
-IBUS_DAEMON_PID=3823
+IBUS_ADDRESS=unix:abstract=/tmp/dbus-kPA323WG,guid=52ccc326f1e8e6c1ad4543d757c23bce
+IBUS_DAEMON_PID=13718

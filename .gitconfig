@@ -1,8 +1,15 @@
 [user]
-	name = RetroCraft
-	email = retrocraft314@gmail.com
-	signingkey = 5AE9E583
+  name = RetroCraft
+  email = retrocraft314@gmail.com
+  signingkey = 5AE9E583
 [credential]
-	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+  helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
 [push]
-	default = simple
+  default = simple
+[alias]
+  # Logs
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg = !"git lg1"
+  # Diffs
+  df = diff --color-words

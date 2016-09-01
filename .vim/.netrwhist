@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/james'
-let g:netrw_dirhist_2='/mnt/shared/Documents/CodingStuff'
-let g:netrw_dirhist_3='/mnt/shared/Documents/CodingStuff/C'
-let g:netrw_dirhist_4='/mnt/shared/Documents/CodingStuff/C/Calculator'
-let g:netrw_dirhist_5='/mnt/shared/Documents/CodingStuff/C/Calculator/src'
-let g:netrw_dirhist_6='/mnt/shared/Documents/CodingStuff'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/mnt/shared/BigStuff/pointless-xcompose/src'
+let g:netrw_dirhist_2='/mnt/shared/BigStuff/pointless-xcompose'
+let g:netrw_dirhist_3='/mnt/shared/BigStuff/pointless-xcompose/src'
